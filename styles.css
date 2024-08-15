@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding-top: 5px;
     text-align: center;
+    background-color: navy;
+    color: gold;
 }
 
 .profile {
@@ -10,7 +12,7 @@ body {
 
 
 .my_nav_bar {
-    position: sticky;
+    position: sticky scroll;
     top: 0;
     z-index: 99999;
 

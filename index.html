@@ -1,110 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.gooleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-        <title>Sir Tim Berners-Lee</title>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>James Bradley</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     </head>
 
     <body>
         
-        <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+        <ul class="menu">
+            <li class="links"><a href="#welcome">HOME</a></li>
+            <li class="links"><a href="#videos">HOBBIES</a></li>
+            <li class="links"><a href="#work">WORK</a></li>
+            <li class="links"><a href="#writings">BOOKS, MOVIES & TRAVELS</a></li>
+            <li class="links"><a href="#contact">PREMIER LEAGUE FOOTBALL TEAM</a></li>
+            <li class="links"><a href="#holidays">Holidays!</a></li>
+        </ul>
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">James Bradley</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#travel">Travel</a></li>
-                    <li><a href="#movies">Movies</a></li>
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#contact">About Me</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        
-
-        <section id="Travel">
-            <div class="container">
-                <h2 class="page-header" id="travel">Places Must Visit</h2>
+        <section id="welcome">
+            <div class="parallax-inner">
+                <img src="Me.png" class="profile" />
+                <h1>My name is <br><span id="name">James Bradley</span></h1>
+                <h2> I am the creator of this website</h2>
             </div>
         </section>
 
         <section id="bio">
             <h1>Hi!</h1>
             <div class="line"></div>
-            <p>Tim Berners-Lee is a software engineer who invented the Internet (or the World Wide Web) in 1989 while at CERN, the European Particle Physics Laboratory.
-    
-                He is director of the World Wide Web Consortium that he founded and a Professor in the Computer Science Department at the University of Oxford.
-    
-                In 2001 he became a Fellow of the Royal Society and in 2004 he was knighted.<br><br>In 1994 Berners-Lee founded the World Wide Web Consortium (W3C) at the Laboratory of Computer Science (LCS) at the Massachusetts Institute of Technology in Boston. It was made up of companies that wanted to work together to create Web standards and also improve the Web. It was quickly agreed that the technology should be free of royalties and patents. Berners-Lee has served as director of this W3C since it was founded.
-    
-                In 1995 Microsoft produced the first version of Internet Explorer and this commercial browser created enormous growth in websites and web users.
-    
-                The Web was first used for e-commerce in 1997.</p>
+            <p>I am James Bradley, a boy from England who loves to: code, play Fortnite, Civilization VI, tennis, supports Leeds United FC and Warhammer 40K. I started playing tennis when I was 4 and started coding at 7/8 on an app called Playgrounds. My first ever holiday was when I went to Kilin, Scotland and my more recent one would be Barcelona, Spain.
+            </p>
         </section>
-    
-    <hr>
+
         <section id="videos">
-            <h1>Videos</h1>
+            <h1 class="success">Hobbies</h1>
             <div class="line"></div>
             <br>
-            <iframe src="https://www.youtube.com/embed/OM6XIICm_qo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1" height="500" > </iframe>
+            <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/07/a-warhammer-space-marine-in-front-of-a-warhammer-40k-battlefield-1.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5" width="600" height="500"> 
             <br>
             <br>
-    
-            <iframe height="500" src="https://www.youtube.com/embed/J8hzJxb0rpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video2" ></iframe>
+            <img src="https://images2.minutemediacdn.com/image/upload/c_crop,w_1952,h_1098,x_360,y_0/c_fill,w_620,ar_16:9,f_auto,q_auto,g_auto/images%2FvoltaxMediaLibrary%2Fmmsport%2Fesports_illustrated%2F01j50vvxpbmx5zrqwbds.jpg" width="600" height="500">
+            <br>
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Civilization_VI_cover_art.jpg" width="600" height="500">
+            <br>
+            <br>
+            <img src="https://i0.wp.com/blog.noblinkyblinky.com/wp-content/uploads/2017/09/vsc-logo.png?w=219&h=219&crop=1&ssl=1" width="600" height="500">
+            <br>
+            <br>
+            <img src="https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-6/406179170_389188833672349_6495856234137798891_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=O7ClDk4FhEcQ7kNvgHcbYFW&_nc_ht=scontent-man2-1.xx&oh=00_AYBVIgVDhMpap2h9xhxgW5VpNLTj6p_EDPQ9desG6xLs5A&oe=66C413CD" width="600" height="500">
+            <br>
+            <br>
+            <img src="https://cdn.images.express.co.uk/img/dynamic/72/940x/secondary/Carlos-Alcaraz-Olympics-5551892.avif?r=1723126189551" width="600" height="500">
         </section>
-    
-    <hr>
-        <section id="work" style="width: 100%;">
-            <h1>WORK</h1>
+            <br>
+            <br>
+        <section id="work">
+            <h1 class="danger">My Favourite Tennis Player</h1>
             <div class="line"></div>
-            <iframe class="work_iframe" height="1000" src="https://en.wikipedia.org/wiki/Tim_Berners-Lee#Career_and_research" frameborder="0" style="width: 80%; margin: 10px;"></iframe>
-    
+            <iframe src="https://en.wikipedia.org/wiki/Carlos_Alcaraz" height="551" width="705"></iframe>
         </section>
-    
-        <hr>
-    
+            <br>
+            <br>
         <section id="writings">
-            <h1>WRITINGS</h1>
+            <h1>Books, Movies & Music</h1>
             <div class="line"></div>
-            <a class="article" href="https://webfoundation.org/2019/03/web-birthday-30" target="_blank">30 years on, what’s next ForTheWeb?</a>
+            <p>I have read quite a few books, listened to many songs and watched many movies. The most interesting, longest and my favourite book I've read is The Three Musketeers. There are quite a few songs I like, none being as great as my top 3 (3rd is Seven Nation Army by the White Stripes, 2nd is Fuel by Metallica and 1st is Thunderstruck by AC/DC).I wouldn't have my music if I didn't have my Mum and Dad (who first showed me these songs). I have a tied top 3 movies that are all equally as great (the three are Spider-Man: No Way Home, The World of Warcraft Movie and the whole Lord of the Rings series).</p>
             <br>
-            <a class="article" href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web" target="_blank">How Did Tim Berners-Lee Change the World With the World Wide Web?</a>
         </section>
-        <hr>
-    
-    <section id="contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0"  allowfullscreen=""></iframe>
-    
-        <div class="contact_1" >
-               <a href="mailto:my@gmail.com?Subject=Hi">
-                   <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
-                </a> 
-    
-               <a href="#"> 
-                   <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;myinstagramid</h5>
-                </a> 
+            <br>
+            <br>
+        <section id="Premier League">
+            <h1>Premier League Team</h1>
+            <div class="line"></div>
+            <img src="PL.png">
             </div>
         </section>
-
+        <br>
+        <br>
+        <section id="Holidays">
+            <h1>Holidays!</h1>
+            <div class="line"></div>
+            <h3>My First Holiday was to Killin, Scotland. <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ab/76/9b.jpg" width="300" height="200">This holiday was full of sickness, stream building, excitement, driving and so much more. We had ducks intruding our cabin and a very nice tree house. We even went to a castle with firing cannons and Highland Coos.</h3>
+            <br>
+            <h3>My second holiday was to a static caravan park in Cayton Bay, England. <img src="https://www.mybudgetbreak.com/img/holiday-parks/uk/parkdean/cayton-bay/600x340-parkdean-cayton-bay-holiday-park.jpg" width="300" height="200">We made many memories here when we went to the beach, went to an indoor pool, went to a steam railway, went into Scarborough and so much more. Overall this was an amazing holiday with beautiful weather.</h3>
+            <br>
+            <h3>My third holiday was to Robin Hood's bay. <img src="https://media.rightmove.co.uk/227k/226334/149295140/226334_48497_IMG_00_0000.jpeg" width="300" height="200">I ended up playing in the heat allot, getting splashed by water, went to whitby abbey (where Dracula ,in legends, lived), fell in love with fish and chips, picked up a crab, went to an aquarium got my first 2 fossils (a trilobite and a raptor tooth and a chipped piece of the raptors pelvis) and so much more.</h3>
+            <br>
+            <h3>My fourth holiday was an amazing one when we went on a road trip down south (biggest part being Legoland). <img src="https://www.travalue.ie/contentFiles/holidayImages/legoland-resort-uk.jpg" width="300" height="200">On this holiday we enjoyed a few rides, and the mini lego city, went to weymouth where we heard about a seal, pirate stories and a pirate cove, went to Stonehenge where we saw the stone circle and met our great aunt, went down to Bristol where we saw the SS Great Britain and heard about it's story.</h3>
+            <br>
+            <h3>My fifth holiday was to Crete, Greece. <img src="https://images.trvl-media.com/lodging/2000000/1200000/1191500/1191451/1bc96bbe.jpg?impolicy=resizecrop&rw=1200&ra=fit" width="300" height="200">This was the first time we'd been on a plane together. We went on many trips. We went to the Cave of Zeus, Spinalonga, ancient Minoan civilization (ruins) of knossos which even has the first paved road ever built, a sea fort, lots of pool swimming, lots of nice food, day at Star beach, a rescue aquarium, many cafes, swam in the mediteranean sea for the first time, had tortoises right by our room and heard the very noisy Chicadas. Definitley one of my favourites.</h3>
+            <br>
+            <h3>My sixth holiday was to Badalona/Barcelona, Spain, where we stayed at Hotel Marina. <img src="https://e3.365dm.com/24/02/1600x900/skynews-la-sagrada-familia_6441536.jpg?20240325112053" width="300" height="200">We made so many memories here. We went into a local supermarket and sampled many new foods, enjoyed walks on the beach by our hotel, quick transport on trains and trams, I tried Toblerone for the first time, saw the Sagrada Familia and allot more. This was another of my favourite trips.</h3>
+        </section>
     </body>
-
 </html>
