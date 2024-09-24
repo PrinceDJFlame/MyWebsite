@@ -105,3 +105,25 @@ function changeSlide2(n) {
     slideIndex2 += n;
     showSlides2(slideIndex2);
 }
+
+/*This is the code for the navbar hamburger*/
+const hamburgerToggle = document.querySelector("#hamburger-toggle");
+const navbar = document.querySelector("#navbar");
+const iconOpen = document.querySelector(".icon-open");
+const iconClose = document.querySelector(".icon-close");
+
+hamburgerToggle.addEventListener("click", onHamburgerClick);
+
+function onHamburgerClick() {
+    // Toggle the open class on the navbar
+    navbar.classList.toggle("open");
+
+    // Toggle visibility of the icons
+    if (navbar.classList.contains("open")) {
+        iconOpen.style.display = "none"; // Hide hamburger icon
+        iconClose.style.display = "block"; // Show close icon
+    } else {
+        iconOpen.style.display = "block"; // Show hamburger icon
+        iconClose.style.display = "none"; // Hide close icon
+    }
+}
