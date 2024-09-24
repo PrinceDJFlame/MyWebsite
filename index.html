@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Bradley</title>
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
@@ -9,32 +9,63 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li class="links"><a href="#home">HOME</a></li>
-                <li class="links"><a href="#hobbies">HOBBIES</a></li>
-                <li class="links"><a href="#tennis">TENNIS</a></li>
-                <li class="links"><a href="#books">BOOKS, MOVIES & TRAVELS</a></li>
-                <li class="links"><a href="#premier">PREMIER LEAGUE FOOTBALL TEAM</a></li>
-                <li class="links"><a href="#holidays">HOLIDAYS</a></li>
-            </ul>
-        </nav>       
-    </header> 
-    
+
+    <nav id="navbar" class="navbar">
+        <ul class="nav-toggle">
+            <li>
+                <a href="#home" class="home">HOME</a>
+            </li>
+            <li>
+                <a href="#hobbies">HOBBIES</a>
+            </li>
+            <li>
+                <a href="#tennis">TENNIS</a>
+            </li>
+            <li>
+                <a href="#movies">MOVIES</a>
+            </li>
+            <li>
+                <a href="#football">FOOTBALL</a>
+            </li>
+            <li>
+                <a href="#holidays">HOLIDAYS</a>
+            </li>
+        </ul>
+
+        <button id="hamburger-toggle" class="hamburger">
+            <div class="icon-open">
+              <!--This is the code to fetch the hamburger icon from the 'tabler.com' website-->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+              </svg>
+            </div>
+              <!--This is the code to fetch the X icob from the 'tabler.com' website-->
+            <div class="icon-close">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M18 6l-12 12" />
+                <path d="M6 6l12 12" />
+              </svg>
+            </div>
+        </button>
+
+    </nav>        
     <main>
-        <section id="home" class="home">
+        <section id="home"> <!--Identifying the sections by an id and not a class just because the navbar is already using a 'home class' so this avoids re-use-->
             <img class="profile-pic" src="Me.jpg" alt="Profile Picture">
             <h1>My name is <br><span id="name">James Bradley</span></h1>
             <h2> I am the creator of this website</h2>
             <h1>Hi!</h1>
-           <p>I am James Bradley, a boy from England who loves to code, play Fortnite, Civilization VI, tennis, support Leeds United FC, and Warhammer 40K.
+           <p>I am James Bradley, a 13 year old boy from England who loves to code, play Fortnite, Civilization VI, tennis, support Leeds United FC, and Warhammer 40K.
              I started playing tennis when I was 4 and started coding at 7/8 on an app called Playgrounds. My first ever holiday was to Kilin, Scotland, and
               my most recent one was to Barcelona, Spain.</p>
         </section>
         <div class="line"></div>
 
-        <section id="hobbies" class="hobbies">
+        <section id="hobbies">
             <h1>Hobbies</h1>
             
                 <div class="slideshow-container">
@@ -70,7 +101,7 @@
 
         </section><br><br>
         <div class="line"></div><br>
-        <section id="tennis" class="tennis">
+        <section id="tennis">
             <h1>My Favourite Tennis Player</h1>
             <div class="tennis-container">
                 <iframe src="https://en.wikipedia.org/wiki/Carlos_Alcaraz" height="551" width="705" title="Carlos Alcaraz Wikipedia"></iframe>
@@ -79,7 +110,7 @@
         </section>
         <div class="line"></div>
 
-        <section id="books" class="books">
+        <section id="movies">
             <h1>Books, Movies & Music</h1>
             
             <p>I have read quite a few books, listened to many songs, and watched many movies.
@@ -89,7 +120,7 @@
         </section>
         <div class="line"></div>
 
-        <section id="premier" class="premier-league">
+        <section id="football">
             <h1>Premier League Team</h1>
             
             <!-- Content for Premier League Team -->
