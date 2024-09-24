@@ -1,52 +1,99 @@
 body {
     margin: 0;
-    padding: 0;
     background-color: navy;
     color: gold;
-    font-family: Arial, sans-serif, helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-header {
-    background-color: #333;
-    padding: 10px 0;
-    width: 100%;
-    color: white;
+.navbar {
+    background: #2e2e2e;
+    color: #ffffff;
+    position: relative;
+    height: 50px; /* Fixed height for the navbar */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+    padding: 0 15px; /* Optional: Add horizontal padding */
+    justify-content: space-between; /* Space between links and hamburger */
 }
 
-nav {
-    position: fixed; /* Fix the navbar to the top */
-    top: 0; /* Position it at the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    background-color: #333; /* Background color */
-    z-index: 1000; /* Ensure it stays above other content */
-}
-
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.nav-toggle {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Keep this as flex to align links in a row */
+    flex-grow: 1; /* Allow it to grow and fill space */
+    align-items: center; /* Vertically center the links */
+    top: 0px;
 }
 
-.links {
-    margin: 0 15px;
-    font-size: 24px;
+.navbar a {
+    padding: 1em; /* Space around the links */
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex; /* Use inline-flex for links to align text */
+    align-items: center; /* Vertically center text within links */
+    transition: background 0.3s;
 }
 
-.links a {
-    color: gold;
-    text-decoration: none; 
-    padding: 15px 20px; 
-    transition: font-size 0.3s;
+.hamburger {
+    margin-left: auto;
 }
 
-.links a:hover {
-    font-size: 25px;
-    text-decoration: underline;
+/* Ensure nav items are properly aligned */
+.navbar a.home {
+    background: #cc540e;
 }
+
+.navbar a:hover {
+    background: #4e4e4e;
+}
+
+.navbar .hamburger {
+    display: none; /* Hide hamburger by default */
+}
+
+.icon-open {
+    display: block; /* Show hamburger icon by default */
+}
+
+.icon-close {
+    display: none; /* Hide close icon by default */
+}
+
+/* When the navbar is open */
+.navbar.open .icon-open {
+    display: none; /* Hide hamburger icon when open */
+}
+
+.navbar.open .icon-close {
+    display: block; /* Show close icon when open */
+}
+
+@media screen and (max-width: 650px) {
+    .nav-toggle li:not(:first-child) {
+        display: none; /* Hide all items except HOME */
+    }
+
+    .navbar.open .nav-toggle {
+        display: flex; /* Show dropdown when navbar is open */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Position it absolutely */
+        background: #2e2e2e; /* Background color */
+        width: 50%; /* Full width */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .navbar.open .nav-toggle li {
+        display: block; /* Show dropdown items */
+    }
+
+    .navbar .hamburger {
+        display: flex; /* Show hamburger icon on mobile */
+    }
+}
+
+  
 
 .line {
     height: 4px;
@@ -57,7 +104,7 @@ nav {
 
 .profile-pic {
     display: block;
-    margin: 0 auto;
+    margin: 50px auto;
     width: 400px;
     height: auto;
     border-radius: 50%;
@@ -73,12 +120,7 @@ p {
     line-height: 1.6;
 }
 
-nav {
-    padding-top: 0.5%;
-}
-
 .slideshow-container {
-/*position: relative;*/
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
@@ -90,18 +132,17 @@ nav {
 }
 
 .slideshow-container2 {
-    /*position: relative;*/
-        width: 80%;
-        max-width: 600px;
-        margin: 0 auto;
-        overflow: hidden;
-        border: 5px solid brown;
-        border-radius: 10px;
-        background: white;
-        position: relative;
-        height: 400px;
-        flex: 1;
-    }
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid brown;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    height: 400px;
+    flex: 1;
+}
 
 .slides {
     display: none;
