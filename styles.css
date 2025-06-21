@@ -1,20 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     margin: 0;
-    background-color: navy;
-    color: gold;
+    background-color: green;
+    color: yellow;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    padding-top: 50px;
 }
 
 .navbar {
     background: #2e2e2e;
     color: #ffffff;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 50px; /* Fixed height for the navbar */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Vertically center items */
     padding: 0 15px; /* Optional: Add horizontal padding */
     justify-content: space-between; /* Space between links and hamburger */
+    z-index: 1000;
 }
 
 .nav-toggle {
@@ -71,6 +86,25 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+    .slideshow-container,
+    .slideshow-container2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-pic{
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    p {
+        padding: 3% 5%;
+    }
+
+    html {
+        font-size: 90%;
+    }
+
     .nav-toggle li:not(:first-child) {
         display: none; /* Hide all items except HOME */
     }
@@ -79,6 +113,8 @@ body {
         display: flex; /* Show dropdown when navbar is open */
         flex-direction: column; /* Stack items vertically */
         position: absolute; /* Position it absolutely */
+        top: 50px;
+        left: 0;
         background: #2e2e2e; /* Background color */
         width: 50%; /* Full width */
         z-index: 1000; /* Ensure it appears above other content */
@@ -90,6 +126,20 @@ body {
 
     .navbar .hamburger {
         display: flex; /* Show hamburger icon on mobile */
+    }
+
+    .slides, .slides2 {
+        height: auto;
+    }
+    .slideshow-container img, .slideshow-container2 img {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.8rem;
     }
 }
 
@@ -276,4 +326,27 @@ p {
     max-width: 800px;
     text-align: justify;
     margin: 0 auto;
+}
+#tennis h1,
+#tennis h2,
+#tennis .wiki-link {
+    margin: 1;
+    padding: 1;
+    line-height: 1;
+}
+#tennis h1 {
+    margin-bottom: 1px;
+}
+#tennis h2 {
+    margin-bottom: 1px;
+}
+
+#wiki-link,
+#tennis .wiki-link {
+    margin-top: 1px;
+    font-size: 1rem;
+}
+
+.goof{
+    color: yellow;
 }

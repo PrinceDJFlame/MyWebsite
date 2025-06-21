@@ -10,6 +10,10 @@ const hobbies = [
         description: "Warhammer 40,000 is a tabletop miniature wargame where players assemble and paint miniatures to battle against each other..."
     },
     {
+        title: "Hero Quest",
+        description: "Hero Quest is also a tabletop game where players collect there characters and have to complete dungeons through fighting and running..."
+    },
+    {
         title: "Fortnite",
         description: "Fortnite is a battle royale game where players fight to be the last one standing on a shrinking map..."
     },
@@ -23,7 +27,7 @@ const hobbies = [
     },
     {
         title: "Tennis",
-        description: "I've been playing tennis for about 5 years now. I have matchplay every Friday and then training and coaching on a Saturday. I also play for my school. See the tennis section of this site for more about tennis."
+        description: "I've been playing tennis for about 9 years now. I have matchplay every Friday and then training and coaching on a Saturday. I try to play tennis everyday (especially in the summer). I also play for my school. See the tennis section of this site for more about tennis."
     }
 ];
 
@@ -55,6 +59,14 @@ const holidays = [
     {
         title: "Malton",
         description: "seventh holiday was one of the best (Malton, Yorkshire, England). This is the exact place I stayed in and it was right in the centre of everywhere we went. Our first day was spent just settling in, going to the town centre of malton to a restaurant called Pizza on the Square (the pizza tasted amazing). On Tuesday, we went to Whitby. Here we went Crabbing for the first time where I caught 1 monster crab, 2 medium crabs and 2 baby crabs. We went to a very nice flapjack shop, rock shop and even went up to Whitby Abbey (which is where Dracula aledgedly lived), and to end the day we had Pot Noodle's and a few bits of meat pastry items. On Wednesday, we went to Castle Howard (which had a huge fire in the early 1900's). There was a nice farmshop where we got a nice lunch, we went to a nice Chinese restaurant where I had the most amazing Lemon Chicken and spicy, salt and pepper squid (exquisite). Later in the week we went to the Birds of Prey centre where we watched 2 bird shows and my favourite bird was either a Griffon vulture or a Red Kite. To end the day, we ate a buffet. On Saturday, we went to Scarbourough where I caught a monster crab, ate a nice fish and chips, ice cream, and churros. We went to a fudge shop and ended the day with some sausage, bacon and egg. On Sunday, we played with the dog in the orchard, big garden area and kid's garden"
+    },
+    {
+        title: "Lake District, England",
+        description: "This was my first proper camping trip and it was amazing! Me, my dad, and my brother decided we wanted to pack our tent up and head up north in 2025. We decided on Great Langdale because there was so much around (like Lake Windermere). I think we will be going camping again!"
+    },
+    {
+        title: "Dublin, Ireland",
+        description: "This is my most recent holiday. I went to the capital of Ireland because my friend is part Irish - and my teacher is Irish - and I thought why not go to Ireland. The food was amazing (especially the Irish breakfast). I would definitley go back again."
     }
 ];
 
